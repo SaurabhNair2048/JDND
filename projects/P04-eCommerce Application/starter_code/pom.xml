@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-    	<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+    	<!-- <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version> -->
 	</properties>
 
 	<dependencies>
@@ -43,6 +43,29 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		<!-- The below are the dependencies for jwt and spring security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<!-- Below dependency is for the slf4j logging tools -->
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    </dependency>
 	</dependencies>
 
 	<build>
